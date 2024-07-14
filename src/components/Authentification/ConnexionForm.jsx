@@ -2,8 +2,7 @@ import React from 'react'
 
 function ConnexionForm() {
   return (
-    <div>
-      
+    <div> 
     </div>
   )
 }

@@ -1,70 +1,174 @@
-# Getting Started with Create React App
+Bien sûr, ajoutons les technologies utilisées au README.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# Parfumerie Application
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+Bienvenue dans l'univers enchanteur de la Parfumerie, une application élégante qui vous permet de découvrir, de parcourir et d'acheter des parfums exquis. Cette plateforme a été conçue pour offrir une expérience utilisateur raffinée, vous permettant de naviguer facilement parmi une large sélection de produits de luxe.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Fonctionnalités
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Inscription et Connexion des utilisateurs** : Créez un compte et connectez-vous pour accéder à des offres exclusives.
+- **Gestion des Produits** : Découvrez notre catalogue de parfums soigneusement sélectionnés.
+- **Gestion des Commandes** : Passez des commandes en toute simplicité et suivez vos achats.
+- **Administration** : Gérez les produits, mettez à jour les informations et gérez les stocks.
 
-### `npm test`
+## Prérequis
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js
+- MySQL
+- npm (Node Package Manager)
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Cloner le Dépôt
+```bash
+git clone https://github.com/votre-repo/parfumerie.git
+cd parfumerie
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Configuration du Backend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Allez dans le dossier `back-end`** :
+   ```bash
+   cd back-end
+   ```
+2. **Installez les dépendances** :
+   ```bash
+   npm install
+   ```
+3. **Configurez la base de données MySQL** :
+   - Ajoutez vos informations de connexion à MySQL dans le fichier `config/db.js`.
+4. **Démarrez le serveur** :
+   ```bash
+   node server.js
+   ```
 
-### `npm run eject`
+### Configuration du Frontend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Allez dans le dossier `front-end`** :
+   ```bash
+   cd ../front-end
+   ```
+2. **Installez les dépendances** :
+   ```bash
+   npm install
+   ```
+3. **Démarrez l'application React** :
+   ```bash
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Arborescence du Projet
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+parfumerie/
+├── front-end/
+│   ├── public/
+│   │   ├── favicon.ico
+│   │   ├── index.html
+│   │   ├── logo192.png
+│   │   ├── logo512.png
+│   │   ├── manifest.json
+│   │   └── robots.txt
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Accueil/
+│   │   │   │   ├── Accueil.js
+│   │   │   │   ├── Accueil.css
+│   │   │   ├── Banner/
+│   │   │   │   ├── Banner.js
+│   │   │   │   ├── Banner.css
+│   │   │   ├── Newsletter/
+│   │   │   │   ├── Newsletter.js
+│   │   │   │   ├── Newsletter.css
+│   │   │   ├── Parfum/
+│   │   │   │   ├── Produits.js
+│   │   │   ├── Authentification/
+│   │   │   │   ├── ConnexionForm.js
+│   │   │   │   ├── ConnexionForm.css
+│   │   │   │   ├── InscriptionForm.js
+│   │   │   │   ├── InscriptionForm.css
+│   │   │   ├── Basics/
+│   │   │   │   ├── Footer.js
+│   │   │   │   ├── Footer.css
+│   │   │   │   ├── Navbar.js
+│   │   │   │   ├── Navbar.css
+│   │   │   ├── Paiement/
+│   │   │   │   ├── ConfirmationPaiement.js
+│   │   │   │   ├── MethodePaiement.js
+│   │   │   │   ├── OptionsLivraison.js
+│   │   │   │   ├── RecapCommande.js
+│   │   │   │   ├── ValiderLePaiement.js
+│   │   │   ├── Panier/
+│   │   │   │   ├── MontantCommande.js
+│   │   │   │   ├── VotrePanier.js
+│   │   │   ├── Profil/
+│   │   │   │   ├── InformationsProfil.js
+│   │   ├── pages/
+│   │   │   ├── Accueil.js
+│   │   │   ├── Connexion.js
+│   │   │   ├── Inscription.js
+│   │   │   ├── Paiement.js
+│   │   │   ├── PaiementValide.js
+│   │   │   ├── Panier.js
+│   │   │   ├── Profil.js
+│   │   ├── App.css
+│   │   ├── App.js
+│   │   ├── index.css
+│   │   ├── index.js
+│   └── package.json
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Structure des Tables
 
-## Learn More
+- `users`
+- `produit`
+- `commande`
+- `category`
+- `produit_category`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies Utilisées
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Frontend
 
-### Code Splitting
+- **React** : Une bibliothèque JavaScript pour construire des interfaces utilisateur.
+- **Axios** : Une bibliothèque pour faire des requêtes HTTP depuis le navigateur.
+- **React Router** : Une bibliothèque pour gérer la navigation dans une application React.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Backend
 
-### Analyzing the Bundle Size
+- **Node.js** : Un environnement d'exécution JavaScript pour le backend.
+- **Express** : Un framework web pour Node.js, utilisé pour construire l'API RESTful.
+- **MySQL** : Un système de gestion de base de données relationnelle pour stocker les données.
+- **bcrypt** : Une bibliothèque pour le hachage des mots de passe, afin d'assurer la sécurité.
+- **jsonwebtoken** : Une bibliothèque pour créer et vérifier les JSON Web Tokens (JWT), utilisés pour l'authentification.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Utilisation
 
-### Making a Progressive Web App
+### Accès à l'Application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Backend** : Ouvrez `http://localhost:8000` dans votre navigateur.
+- **Frontend** : Ouvrez `http://localhost:3000` dans votre navigateur.
 
-### Advanced Configuration
+### Tester l'API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Utilisez des outils comme Thunder Client ou Postman pour envoyer des requêtes HTTP à votre API.
 
-### Deployment
+## Inspiration et Styles
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+L'inspiration pour le design de cette application vient de l'élégance intemporelle des grandes maisons de parfum. Le style est épuré et moderne, mettant en valeur les produits de manière sobre et raffinée.
 
-### `npm run build` fails to minify
+## Créateurs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Cette application a été créée par une équipe passionnée : **Adilé**, **Awa**, et **Eva**. L' objectif est de fournir une expérience utilisateur exceptionnelle tout en mettant en avant des produits de qualité.
+
+## Licence
+
+Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+---
+
+J'espère que ce README répond à vos attentes et qu'il rendra votre projet encore plus attrayant. Si vous avez besoin de modifications supplémentaires, n'hésitez pas à demander !
