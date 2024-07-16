@@ -1,0 +1,42 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #ccc;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .social-icons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .social-icons a {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .social-icons a {
+      font-size: 18px;
+    }
+  }
+  

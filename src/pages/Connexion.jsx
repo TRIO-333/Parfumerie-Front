@@ -1,17 +1,16 @@
-import React from 'react'
-import Navbar from '../components/Basics/Navbar'
-import Footer from '../components/Basics/Footer'
-import ConnexionForm from '../components/Authentification/ConnexionForm'
+import React from 'react';
+import Navbar from '../components/Basics/Navbar';
+import Footer from '../components/Basics/Footer';
+import ConnexionForm from '../components/Authentification/ConnexionForm';
 
-function Connexion() {
+const Connexion = () => {
   return (
     <div>
-      <Navbar/>
-      Connexion
-      <ConnexionForm/>
-      <Footer/>
+      <Navbar />
+      <ConnexionForm />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Connexion
+export default Connexion;

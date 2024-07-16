@@ -1,17 +1,16 @@
-import React from 'react'
-import Navbar from '../components/Basics/Navbar'
-import Footer from '../components/Basics/Footer'
-import InscriptionForm from '../components/Authentification/InscriptionForm'
+import React from 'react';
+import Navbar from '../components/Basics/Navbar';
+import Footer from '../components/Basics/Footer';
+import InscriptionForm from '../components/Authentification/InscriptionForm';
 
-function Inscription() {
+const Inscription = () => {
   return (
     <div>
-      <Navbar/>
-      Inscription
-      <InscriptionForm/>
-      <Footer/>
+      <Navbar />
+      <InscriptionForm />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Inscription
+export default Inscription;

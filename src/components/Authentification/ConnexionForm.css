@@ -1,0 +1,53 @@
+.connexion-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+.box {
+  margin-bottom: 15px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.forgot-password,
+.sign-up-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.forgot-password a,
+.sign-up-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgot-password a:hover,
+.sign-up-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .connexion-form {
+    padding: 15px;
+  }
+}

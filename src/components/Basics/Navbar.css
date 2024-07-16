@@ -1,0 +1,157 @@
+/* Style général pour la Navbar */
+.navbar {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Bannière en haut */
+  .top-banner {
+    background-color: #f8d7da;
+    color: #000;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 14px;
+  }
+  
+  /* Section principale de la Navbar */
+  .navbar-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Section gauche de la Navbar */
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-left .logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    margin-left: 20px;
+  }
+  
+  /* Section centrale de la Navbar */
+  .navbar-center {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 600px;
+    margin: 0 20px;
+  }
+  
+  .navbar-center input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    width: 100%;
+  }
+  
+  .navbar-center button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Section droite de la Navbar */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right a {
+    margin-left: 20px;
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right a i {
+    margin-right: 5px;
+    font-size: 20px;
+  }
+  
+  /* Bouton menu burger */
+  .menu-burger {
+    display: none;
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Section en bas de la Navbar */
+  .navbar-bottom {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .navbar-bottom a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-bottom a:hover {
+    color: #007bff;
+  }
+  
+  /* Style pour la version responsive */
+  @media (max-width: 768px) {
+    .navbar-main {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-center {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .navbar-center input {
+      width: calc(100% - 40px);
+    }
+  
+    .navbar-right {
+      display: none;
+    }
+  
+    .menu-burger {
+      display: block;
+    }
+  
+    .navbar-bottom {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding-left: 30px;
+    }
+  
+    .navbar-bottom.open {
+      display: flex;
+    }
+  
+    .navbar-bottom a {
+      margin: 5px 0;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  
